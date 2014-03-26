@@ -3,7 +3,7 @@
 This apache2 module adds the main domain to each cookie set by the webserver or
 proxied HTTP response. Without the module, it is not possible to set the domain
 name for a cookie from a virtual host. You can set the domain name of a cookie
-to a single domain, but when there are multiple domains behind a single apache
+to a fixed domain, but when there are multiple domains behind a single apache
 server, apache2 cannot set the domain name of the cookie to the hostname of the
 request.
 
