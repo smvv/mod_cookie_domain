@@ -1,4 +1,8 @@
-### Usage:
+# Add main domain to cookies using `mod_cookie_domain`
+
+...
+
+## Usage
 
 For compilation and installation of the apache2 modules, use:
 
@@ -13,7 +17,7 @@ You'll probable need root access to install the module there. Therefore,
 performing `make` followed by `sudo make install` is advised. The apache2
 server has to be restarted in order to use the module.
 
-### Testing
+## Testing
 
 For compilation, installation and testing the module, use:
 
