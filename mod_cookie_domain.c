@@ -132,7 +132,8 @@ static apr_status_t cookie_domain_filter(ap_filter_t* f,
                 int p = 0;
 
                 while(part) {
-                    parts[p++ % 2] = apr_pstrdup(r->pool, part);
+                    parts[p] = apr_pstrdup(r->pool, part);
+                    p = (p + 1) % 2;
                     part = apr_strtok(NULL, ".", &last);
                 }
 
